@@ -42,6 +42,9 @@
 
 ## 1. Procesos y Rendimiento de CPU
 
+> [!TIP]
+> 📸 Consulta el informe práctico paso a paso analizando cada captura real en el documento [**`1.md`**](1.md).
+
 Un proceso en Linux es cualquier instancia de un programa en ejecución con su propio espacio de memoria virtual, identificador único (**PID**), descriptor de archivos y contexto de ejecución gestionado por el planificador del kernel (*scheduler*).
 
 ### 1.1 Ciclo de vida y estados de un proceso
