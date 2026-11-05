@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="100%" height="260">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#94a3b8" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10b981" />
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#ef4444" />
+    </marker>
+  </defs>
+
+  <rect width="880" height="260" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="30" y="35" font-family="sans-serif" font-size="16" font-weight="700" fill="#f8fafc">Ciclo de Vida y Estados de un Proceso en Linux</text>
+
+  <!-- Box 1: Creado (fork/clone) -->
+  <rect x="30" y="80" width="120" height="60" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="90" y="107" font-family="sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle">CREADO</text>
+  <text x="90" y="125" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">fork() / clone()</text>
+
+  <!-- Arrow to Ready -->
+  <line x1="150" y1="110" x2="200" y2="110" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 2: Ready / Running (R) -->
+  <rect x="210" y="70" width="160" height="80" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+  <text x="290" y="100" font-family="sans-serif" font-size="14" font-weight="700" fill="#34d399" text-anchor="middle">EJECUCIÓN (R)</text>
+  <text x="290" y="120" font-family="sans-serif" font-size="11" fill="#a7f3d0" text-anchor="middle">En CPU o Listo (Ready)</text>
+  <text x="290" y="136" font-family="monospace" font-size="10" fill="#6ee7b7" text-anchor="middle">Task Running</text>
+
+  <!-- Box 3: Sleeping (S / D) -->
+  <rect x="440" y="45" width="180" height="65" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="530" y="72" font-family="sans-serif" font-size="13" font-weight="700" fill="#fbbf24" text-anchor="middle">DURMIENDO (S / D)</text>
+  <text x="530" y="90" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">S: Interrumpible (espera I/O)</text>
+  <text x="530" y="102" font-family="sans-serif" font-size="10" fill="#fca5a5" text-anchor="middle">D: Ininterrumpible (Disco E/S)</text>
+
+  <!-- Box 4: Stopped (T) -->
+  <rect x="440" y="145" width="180" height="65" rx="8" fill="#1e293b" stroke="#c084fc" stroke-width="1.5"/>
+  <text x="530" y="172" font-family="sans-serif" font-size="13" font-weight="700" fill="#c084fc" text-anchor="middle">DETENIDO (T)</text>
+  <text x="530" y="190" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Pausado (SIGSTOP / Ctrl+Z)</text>
+  <text x="530" y="202" font-family="monospace" font-size="10" fill="#e9d5ff" text-anchor="middle">bg / fg para reactivar</text>
+
+  <!-- Arrow R -> S -->
+  <path d="M 370 95 L 430 75" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)" fill="none"/>
+  <!-- Arrow S -> R -->
+  <path d="M 430 95 L 370 115" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrow-green)" fill="none"/>
+
+  <!-- Arrow R -> T -->
+  <path d="M 370 130 L 430 160" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)" fill="none"/>
+  <!-- Arrow T -> R -->
+  <path d="M 430 180 L 350 150" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrow-green)" fill="none"/>
+
+  <!-- Box 5: Zombie (Z) / Terminado -->
+  <rect x="690" y="80" width="160" height="65" rx="8" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="770" y="107" font-family="sans-serif" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle">ZOMBIE (Z) / FIN</text>
+  <text x="770" y="125" font-family="sans-serif" font-size="10" fill="#fecaca" text-anchor="middle">Padre no leyó wait()</text>
+  <text x="770" y="137" font-family="monospace" font-size="10" fill="#f87171" text-anchor="middle">Liberado por init (PID 1)</text>
+
+  <!-- Arrow R -> Zombie -->
+  <path d="M 370 110 L 680 110" stroke="#ef4444" stroke-dasharray="4,4" stroke-width="1.5" marker-end="url(#arrow-red)" fill="none"/>
+  <text x="530" y="125" font-family="monospace" font-size="9" fill="#ef4444" text-anchor="middle">exit() / SIGKILL (9)</text>
+</svg>

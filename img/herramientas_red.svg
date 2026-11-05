@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 230" width="100%" height="230">
+  <rect width="880" height="230" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="30" y="32" font-family="sans-serif" font-size="16" font-weight="700" fill="#f8fafc">Mapa de Herramientas de Monitorización de Red en Linux</text>
+
+  <g transform="translate(20, 50)">
+    <!-- Columna 1: Capa de Enlace / Interfaz -->
+    <rect x="10" y="10" width="195" height="150" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="107" y="35" font-family="sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle">1. Interfaces Físicas</text>
+    <text x="25" y="65" font-family="monospace" font-size="11" fill="#f1f5f9">• ip -s link</text>
+    <text x="25" y="85" font-family="monospace" font-size="11" fill="#f1f5f9">• ip -br addr</text>
+    <text x="25" y="105" font-family="monospace" font-size="11" fill="#f1f5f9">• ethtool eth0</text>
+    <text x="25" y="135" font-family="sans-serif" font-size="10" fill="#94a3b8">Estado up/down, MTU,</text>
+    <text x="25" y="148" font-family="sans-serif" font-size="10" fill="#94a3b8">errores y drops de paquetes</text>
+
+    <!-- Columna 2: Capa de Transporte / Sockets -->
+    <rect x="225" y="10" width="195" height="150" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="322" y="35" font-family="sans-serif" font-size="13" font-weight="700" fill="#818cf8" text-anchor="middle">2. Sockets y Puertos</text>
+    <text x="240" y="65" font-family="monospace" font-size="11" fill="#f1f5f9">• ss -tulpn</text>
+    <text x="240" y="85" font-family="monospace" font-size="11" fill="#f1f5f9">• lsof -i :80</text>
+    <text x="240" y="105" font-family="monospace" font-size="11" fill="#f1f5f9">• netstat -nat</text>
+    <text x="240" y="135" font-family="sans-serif" font-size="10" fill="#94a3b8">Puertos escuchando,</text>
+    <text x="240" y="148" font-family="sans-serif" font-size="10" fill="#94a3b8">conexiones TCP/UDP vivas</text>
+
+    <!-- Columna 3: Ancho de Banda en Vivo -->
+    <rect x="440" y="10" width="195" height="150" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+    <text x="537" y="35" font-family="sans-serif" font-size="13" font-weight="700" fill="#34d399" text-anchor="middle">3. Ancho de Banda</text>
+    <text x="455" y="65" font-family="monospace" font-size="11" fill="#f1f5f9">• iftop -i eth0</text>
+    <text x="455" y="85" font-family="monospace" font-size="11" fill="#f1f5f9">• nload</text>
+    <text x="455" y="105" font-family="monospace" font-size="11" fill="#f1f5f9">• bmon / iptraf-ng</text>
+    <text x="455" y="135" font-family="sans-serif" font-size="10" fill="#94a3b8">Consumo KB/s por host,</text>
+    <text x="455" y="148" font-family="sans-serif" font-size="10" fill="#94a3b8">gráficos de subida y bajada</text>
+
+    <!-- Columna 4: Captura e Inspección Profunda -->
+    <rect x="655" y="10" width="185" height="150" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="1.5"/>
+    <text x="747" y="35" font-family="sans-serif" font-size="13" font-weight="700" fill="#f472b6" text-anchor="middle">4. Diagnóstico / Paquetes</text>
+    <text x="670" y="65" font-family="monospace" font-size="11" fill="#f1f5f9">• tcpdump -nn</text>
+    <text x="670" y="85" font-family="monospace" font-size="11" fill="#f1f5f9">• ping -c 4</text>
+    <text x="670" y="105" font-family="monospace" font-size="11" fill="#f1f5f9">• mtr / traceroute</text>
+    <text x="670" y="135" font-family="sans-serif" font-size="10" fill="#94a3b8">Inspección de tramas,</text>
+    <text x="670" y="148" font-family="sans-serif" font-size="10" fill="#94a3b8">latencia y pérdidas de ruta</text>
+  </g>
+</svg>

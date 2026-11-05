@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 240" width="100%" height="240">
+  <rect width="880" height="240" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="30" y="32" font-family="sans-serif" font-size="16" font-weight="700" fill="#f8fafc">Estructura de la Memoria en Linux (RAM vs Cache/Buffer vs Swap)</text>
+
+  <g transform="translate(30, 55)">
+    <!-- Total RAM Bar -->
+    <rect x="0" y="15" width="820" height="45" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    
+    <!-- Used RAM -->
+    <rect x="0" y="15" width="280" height="45" rx="6" fill="#3b82f6" opacity="0.85"/>
+    <text x="140" y="42" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">USADA (Programas / SO)</text>
+
+    <!-- Buffers / Cache -->
+    <rect x="280" y="15" width="340" height="45" fill="#10b981" opacity="0.85"/>
+    <text x="450" y="36" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">BUFFERS &amp; CACHÉ</text>
+    <text x="450" y="51" font-family="sans-serif" font-size="10" fill="#e2e8f0" text-anchor="middle">Recuperable al instante si se requiere</text>
+
+    <!-- Free RAM -->
+    <rect x="620" y="15" width="200" height="45" rx="6" fill="#64748b" opacity="0.85"/>
+    <text x="720" y="42" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">LIBRE (Sin asignar)</text>
+
+    <!-- Real Available Bracket -->
+    <path d="M 280 68 L 280 78 L 550 78 L 550 86 L 550 78 L 820 78 L 820 68" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <text x="550" y="104" font-family="sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle">MEMORIA DISPONIBLE REAL (Available = Free + Buffers/Cache)</text>
+    <text x="550" y="120" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Linux usa la memoria desocupada como caché de disco para acelerar operaciones (Page Cache)</text>
+
+    <!-- Swap Bar -->
+    <g transform="translate(0, 115)">
+      <rect x="0" y="15" width="820" height="30" rx="4" fill="#1e1e2e" stroke="#dc2626" stroke-width="1.2"/>
+      <rect x="0" y="15" width="60" height="30" rx="4" fill="#ef4444" opacity="0.8"/>
+      <text x="30" y="35" font-family="sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Swap</text>
+      <text x="440" y="35" font-family="sans-serif" font-size="11" fill="#fca5a5" text-anchor="middle">ÁREA DE INTERCAMBIO (SWAP EN DISCO) - Evitar uso intensivo (Swapping / Thrashing)</text>
+    </g>
+  </g>
+</svg>
