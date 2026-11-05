@@ -1,0 +1,15 @@
+# Logs y temporales
+*.log
+*.tmp
+*.pcap
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Entornos y editores
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
