@@ -4,7 +4,12 @@
 
 # Monitorización de Sistemas Linux
 
+[![PDF Document](https://img.shields.io/badge/PDF-Descargar%20Documentación%20Completa-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](Monitorizacion_Sistemas_Linux_Jose_Vizuete.pdf)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-eljoviz%2Fmonitorizacion-181717?style=for-the-badge&logo=github)](https://github.com/eljoviz/monitorizacion/tree/main)
+
 </div>
+
+> 📄 **Documento Completo en PDF:** Puedes consultar y descargar la versión imprimible y evaluable del proyecto con los 4 capítulos y más de 25 capturas en alta resolución en: [**Monitorizacion_Sistemas_Linux_Jose_Vizuete.pdf**](Monitorizacion_Sistemas_Linux_Jose_Vizuete.pdf).
 
 ---
 
