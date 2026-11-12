@@ -17,7 +17,7 @@
    - Gestión de RAM física, Buffers, Page Cache y Swap con `free` y `free -s`. Almacenamiento y rendimiento de disco.
 
 3. [**Tráfico y Diagnóstico de Red**](3.md)
-   - Interfaces físicas, sockets y puertos en escucha (`ss`), ancho de banda y captura de paquetes.
+   - Interfaces físicas, sockets (`ss`), titularidad IP (`whois`), auditoría con `nmap`, resolución `arp`, ancho de banda (`iptraf`, `tcptrack`, `bmon`) y captura de paquetes (`tcpdump`).
 
 ---
 
