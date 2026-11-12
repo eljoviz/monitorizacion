@@ -19,6 +19,9 @@
 3. [**Tráfico y Diagnóstico de Red**](3.md)
    - Interfaces físicas, sockets (`ss`), titularidad IP (`whois`), auditoría con `nmap`, resolución `arp`, ancho de banda (`iptraf`, `tcptrack`, `bmon`) y captura de paquetes (`tcpdump`).
 
+4. [**Tarea Práctica: Análisis de Red Local**](4.md)
+   - Práctica de laboratorio evaluable: Configuración de red (`ip a`, `ip r`), gestión de caché de vecinos ARP (`arp`, `ip neigh`), descubrimiento de red con Nmap (`-sn`) y detección de servicios y versiones (`-sV`).
+
 ---
 
 <div align="center">
